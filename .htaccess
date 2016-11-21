@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^raghavmarwah.com$ [NC]
+
+RewriteRule ^(.*)$ http://www.raghavmarwah.com/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+
+RewriteRule ^(.*)index.html$ http://www.raghavmarwah.com/$1 [R=301,L]
